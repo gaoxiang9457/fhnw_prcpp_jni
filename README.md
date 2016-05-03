@@ -12,8 +12,8 @@ The challenge to use jni in a java application.
 3. Import the .h file to your c++ project
 4. Make sure your environment loads jni properly (see fhnw_prcpp_jni/part_cpp/CMakeLists.txt)
 5. Implement the functions / methods as you wish to
-6. ```cd <YOUR_.cpp_IMPLEMENTATION_FILE_FOLDER>
-7. ```g++ -Wl,--add-stdcall-alias -I "<JAVA_32_BIT_HOME>\include" -I"<JAVA_32_BIT_HOME>\include\win32" -shared -o <DESIRED_.dll_FILE_PATH> <IMPLEMENTATION_FILE>
+6. ```cd <YOUR_.cpp_IMPLEMENTATION_FILE_FOLDER>```
+7. ```g++ -Wl,--add-stdcall-alias -I "<JAVA_32_BIT_HOME>\include" -I"<JAVA_32_BIT_HOME>\include\win32" -shared -o <DESIRED_.dll_FILE_PATH> <IMPLEMENTATION_FILE>```
    * special thanks to http://www3.ntu.edu.sg/home/ehchua/programming/java/JavaNativeInterface.html
 8. Copy the newly created .dll to the root of your java project
 9. Run your java application using the native methods (and cheer)
