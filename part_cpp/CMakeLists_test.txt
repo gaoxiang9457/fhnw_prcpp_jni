@@ -6,11 +6,11 @@ find_package(JNI REQUIRED)
 include_directories(${JNI_INCLUDE_DIRS})
 
 set(SOURCE_FILES
-        matrix.cpp
-        Matrix.h)
+        main.cpp
+        Test.h)
 
-add_library(nativeFunctionsShared SHARED matrix.cpp Matrix.h)
+add_library(nativeFunctionsShared SHARED main.cpp Test.h)
 set_target_properties(nativeFunctionsShared PROPERTIES COMPILE_FLAGS "-m32" LINK_FLAGS "-m32")
-add_library(nativeFunctionsStatic STATIC matrix.cpp Matrix.h)
-add_library(nativeFunctionsModule MODULE matrix.cpp Matrix.h)
+add_library(nativeFunctionsStatic STATIC main.cpp Test.h)
+add_library(nativeFunctionsModule MODULE main.cpp Test.h)
 add_executable(nativeFunctions ${SOURCE_FILES})

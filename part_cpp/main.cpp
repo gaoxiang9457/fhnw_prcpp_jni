@@ -13,7 +13,7 @@ JNIEXPORT jint JNICALL Java_Test_increment
     return a++;
 }
 
-/*
+
 int main() {
     return 0;
-}*/
+}
