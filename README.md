@@ -17,6 +17,3 @@ The challenge to use jni in a java application.
    * special thanks to http://www3.ntu.edu.sg/home/ehchua/programming/java/JavaNativeInterface.html
 8. Copy the newly created .dll to the root of your java project
 9. Run your java application using the native methods (and cheer)
-
-
-g++ -Wl,--add-stdcall-alias -I "C:\Program Files (x86)\Java\jdk1.8.0_91\include" -I "C:\Program Files (x86)\Java\jdk1.8.0_91\include\win32" -shared -o C:\Users\Ken\OneDrive\4\prcpp\workspace\Uebung_2\fhnw_prcpp_jni\part_java\Matrix.dll matrix.cpp
